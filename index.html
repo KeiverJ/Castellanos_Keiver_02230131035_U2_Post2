@@ -91,7 +91,58 @@
 
         </fieldset>
 
-        <!-- Aquí irán los fieldsets siguientes -->
+        <!-- Fieldset 2: Configuración de Cuenta -->
+        <fieldset>
+          <legend>Configuración de Cuenta</legend>
+
+          <!-- Nombre de usuario -->
+          <label for="usuario">Nombre de Usuario *</label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            placeholder="Ej: julio123"
+            minlength="4"
+            maxlength="20"
+            autocomplete="username"
+            aria-describedby="usuario-hint"
+            required>
+          <small id="usuario-hint">Entre 4 y 20 caracteres, sin espacios.</small>
+
+          <!-- Contraseña -->
+          <label for="password">Contraseña *</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Mínimo 8 caracteres"
+            minlength="8"
+            autocomplete="new-password"
+            aria-describedby="password-hint"
+            required>
+          <small id="password-hint">Mínimo 8 caracteres. Usa letras y números.</small>
+
+          <!-- Confirmar contraseña -->
+          <label for="password-confirm">Confirmar Contraseña *</label>
+          <input
+            type="password"
+            id="password-confirm"
+            name="password_confirm"
+            placeholder="Repite tu contraseña"
+            minlength="8"
+            autocomplete="new-password"
+            required>
+
+          <!-- Sitio web -->
+          <label for="sitio-web">Sitio Web o LinkedIn</label>
+          <input
+            type="url"
+            id="sitio-web"
+            name="sitio_web"
+            placeholder="https://linkedin.com/in/tu-perfil"
+            autocomplete="url">
+
+        </fieldset>
 
       </form>
     </main>
