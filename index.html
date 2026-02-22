@@ -201,6 +201,43 @@
 
         </fieldset>
 
+        <!-- Fieldset 4: Preferencias -->
+        <fieldset>
+          <legend>Preferencias</legend>
+
+          <!-- Modalidad de estudio -->
+          <fieldset>
+            <legend>Modalidad de Estudio Preferida *</legend>
+            <input type="radio" id="modalidad-async" name="modalidad" value="asincrona" required>
+            <label for="modalidad-async">Asíncrona (a mi propio ritmo)</label>
+            <input type="radio" id="modalidad-sync" name="modalidad" value="sincrona">
+            <label for="modalidad-sync">Sincrónica (clases en vivo)</label>
+            <input type="radio" id="modalidad-mixta" name="modalidad" value="mixta">
+            <label for="modalidad-mixta">Mixta</label>
+          </fieldset>
+
+          <!-- Checkboxes -->
+          <input
+            type="checkbox"
+            id="newsletter"
+            name="newsletter"
+            value="si">
+          <label for="newsletter">Deseo recibir el boletín con novedades y cursos nuevos</label>
+
+          <input
+            type="checkbox"
+            id="terminos"
+            name="terminos"
+            value="si"
+            required>
+          <label for="terminos">Acepto los términos y condiciones *</label>
+
+        </fieldset>
+
+        <!-- Botones de acción -->
+        <button type="submit">Registrarse</button>
+        <button type="reset">Limpiar Formulario</button>
+
       </form>
     </main>
 
