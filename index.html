@@ -144,6 +144,63 @@
 
         </fieldset>
 
+        <!-- Fieldset 3: Información Académica -->
+        <fieldset>
+          <legend>Información Académica</legend>
+
+          <!-- Nivel de estudios -->
+          <label for="nivel-estudios">Nivel de Estudios *</label>
+          <select
+            id="nivel-estudios"
+            name="nivel_estudios"
+            autocomplete="off"
+            required>
+            <option value="">Selecciona tu nivel</option>
+            <option value="bachillerato">Bachillerato</option>
+            <option value="tecnico">Técnico / Tecnólogo</option>
+            <option value="universitario">Universitario</option>
+            <option value="posgrado">Posgrado</option>
+          </select>
+
+          <!-- Área de interés -->
+          <label for="area-interes">Área de Interés *</label>
+          <select
+            id="area-interes"
+            name="area_interes"
+            required>
+            <option value="">Selecciona un área</option>
+            <option value="html-css">HTML y CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="backend">Desarrollo Backend</option>
+            <option value="fullstack">Fullstack</option>
+          </select>
+
+          <!-- Años de experiencia -->
+          <label for="experiencia">Años de Experiencia en Programación</label>
+          <input
+            type="number"
+            id="experiencia"
+            name="experiencia"
+            placeholder="Ej: 2"
+            min="0"
+            max="50"
+            aria-describedby="experiencia-hint">
+          <small id="experiencia-hint">Escribe 0 si eres principiante.</small>
+
+          <!-- Biografía -->
+          <label for="bio">Cuéntanos sobre ti *</label>
+          <textarea
+            id="bio"
+            name="biografia"
+            rows="5"
+            maxlength="500"
+            placeholder="¿Por qué quieres aprender programación web? ¿Qué proyectos tienes en mente?"
+            aria-describedby="bio-hint"
+            required></textarea>
+          <small id="bio-hint">Máximo 500 caracteres.</small>
+
+        </fieldset>
+
       </form>
     </main>
 
