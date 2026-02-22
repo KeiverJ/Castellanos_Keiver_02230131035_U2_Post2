@@ -20,7 +20,78 @@
     <main>
       <form action="/registro" method="POST" autocomplete="on" novalidate>
 
-        <!-- Aquí irán los fieldsets en commits siguientes -->
+        <!-- Fieldset 1: Información Personal -->
+        <fieldset>
+          <legend>Información Personal</legend>
+
+          <!-- Nombre -->
+          <label for="nombre">Nombre *</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ej: Julio"
+            autocomplete="given-name"
+            required
+            autofocus>
+
+          <!-- Apellido -->
+          <label for="apellido">Apellido *</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Ej: Castellanos"
+            autocomplete="family-name"
+            required>
+
+          <!-- Correo -->
+          <label for="email">Correo Electrónico *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ejemplo@correo.com"
+            autocomplete="email"
+            required>
+
+          <!-- Teléfono -->
+          <label for="telefono">Teléfono *</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="+57 300 123 4567"
+            pattern="[+][0-9]{2} [0-9]{3} [0-9]{3} [0-9]{4}"
+            autocomplete="tel"
+            aria-describedby="telefono-hint"
+            required>
+          <small id="telefono-hint">Formato: +57 300 123 4567</small>
+
+          <!-- Fecha de nacimiento -->
+          <label for="fecha-nacimiento">Fecha de Nacimiento *</label>
+          <input
+            type="date"
+            id="fecha-nacimiento"
+            name="fecha_nacimiento"
+            min="1940-01-01"
+            max="2008-12-31"
+            required>
+
+          <!-- Género -->
+          <fieldset>
+            <legend>Género *</legend>
+            <input type="radio" id="genero-m" name="genero" value="masculino" required>
+            <label for="genero-m">Masculino</label>
+            <input type="radio" id="genero-f" name="genero" value="femenino">
+            <label for="genero-f">Femenino</label>
+            <input type="radio" id="genero-otro" name="genero" value="otro">
+            <label for="genero-otro">Otro</label>
+          </fieldset>
+
+        </fieldset>
+
+        <!-- Aquí irán los fieldsets siguientes -->
 
       </form>
     </main>
